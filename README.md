@@ -1,7 +1,7 @@
 # My web
-* Diana Chassot
-### Landing page with contact form using "Formspree" .Page provide information about me, my skills and projects. 
 
+### Landing page with contact form using "Formspree" .Page provide information about me, my skills and projects. 
+* Diana Chassot
 
 #### Technologies used in the project:
 * HTML;
