@@ -8,15 +8,13 @@
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;700&family=Roboto+Mono:wght@400;700&family=Ubuntu:ital,wght@0,400;0,700;1,500&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
     <!-- normalize -->
     <link rel="stylesheet" href="css/normalize.css">
     <!-- css -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" type="image/x-icon" href="img/favicon.png">
-    <title>Hello! Welcome to my Web Station!</title>
+    <link rel="icon" type="image/x-icon" href="img/logo.png">
+    <title>Hello! Welcome to my Web!</title>
 </head>
 
 <body>
@@ -25,316 +23,419 @@
         <div id="loader"></div>
         <div class="loader-section section-left"></div>
         <div class="loader-section section-right"></div>
-      </div>
+    </div>
     <!-- header -->
     <header class="header">
         <div class="container">
             <div class="header__menu">
-                <h2 class="header__title">
-                    <a href="#">
-                        &#60;code&#62;
+                <h2 class="header__logo">
+                    <a href="./">
+                        <img src="img/logo.png" alt="logo" width="50px">
                     </a>
                 </h2>
-                <ul class="header__list">
-                    <li class="header__item"><a href="./#about">01.about</a></li>
-                    <li class="header__item"><a href="./#projects">02.projects</a></li>
-                    <li class="header__item"><a href="./#contact">03.contact</a></li>
-                </ul>
-                <div class="social-links">
-                    <a href="https://www.facebook.com/diana.deineka" class="social-icon" target="_blank">
-                        <i
-                            class="fa-brands fa-facebook-f"></i>
+                <i class="header__icon fa-brands fa-connectdevelop fa-spin"></i>
+                <nav class="header__list">
+                    <a href="./#about" class="header__item">About</a>
+                    <a href="./#projects" class="header__item">Projects</a>
+                    <a href="./#contact" class="header__item">Contact</a>
+                    <div class="links">
+                        <a href="https://www.facebook.com/diana.deineka" class="social-icon" target="_blank">
+                            <i class="fa-brands fa-facebook-f"></i>
                         </a>
-                    <a href="https://twitter.com/dianaukaraine" class="social-icon" target="_blank">
-                        <i class="fa-brands fa-twitter"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/diana-chassot-3038a7263/" class="social-icon"target="_blank">
-                        <i class=" fa-brands fa-linkedin-in"></i>
-                    </a>
-                </div>
-                <nav class="header__nav-mobile">
-                    <i class="header__icon-mobile fa-brands fa-connectdevelop fa-spin"></i>
-                    <ul class="header__list-mobile">
-                        <li class="header__item-mobile">
-                            <a href="./#about">01.about</a>
-                        </li>
-                        <li class="header__item-mobile">
-                            <a href="./#projects">02.projects</a>
-                        </li>
-                        <li class="header__item-mobile">
-                            <a href="./#contact">03.contact</a>
-                        </li>
-                        <li class="header__item-mobile">
-                            <a href="https://www.facebook.com/diana.deineka" class="social-icon" target="_blank">
-                                <i class="fa-brands fa-facebook-f"></i>
-                            </a>
-                            <a href="https://twitter.com/dianaukaraine" class="social-icon" target="_blank">
-                                <i class="fa-brands fa-twitter"></i>
-                            </a>
-                            <a href="https://www.linkedin.com/in/diana-chassot-3038a7263/" class="social-icon" target="_blank">
-                                <i class=" fa-brands fa-linkedin-in"></i>
-                            </a>
-                        </li>
-                    </ul>
+                        <a href="https://github.com/Diana-Chassot" class="social-icon" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/diana-chassot-3038a7263/" class="social-icon"
+                            target="_blank">
+                            <i class=" fa-brands fa-linkedin-in" target="_blank"></i>
+                        </a>
+
+                    </div>
                 </nav>
             </div>
         </div>
     </header>
     <!-- main -->
     <section class="main">
-        <div class="parallax">
-            <div class="container">
-                <div class="d2"></div>
-                <div class="d3 ">
-                    <h2 class="title--small">Hi, my name is:</h2>
-                    <h1 class="main__title">Diana Chassot.</h1>
-                    <h4 class="main__subtitle text--shadow ">I am junior front-end developer;</h4>
+        <div class="container">
+            <div class="main__wrapper">
+                <div class="main__content">
+                    <h1 class="main__title">Diana Chassot</h1>
+                    <hr/>
+                    <h4 class="main__subtitle">Junior Front-End & React developer</h4>
                 </div>
-                <div class="d4"></div>
             </div>
         </div>
     </section>
     <!-- about  -->
     <section class="about" id="about">
         <div class="container">
-            <div class="parallax">
-                <h2 class="title--small paralax-elem  about__title">01.about me....</h2>
-                <!-- general -->
-                <div class="about__general-info paralax-elem">
-                    <p class="about__passionate">Passionate about learning new technologies.</p>
+            <h2 class="title">About</h2>
+            <div class="about__flex">
+                <div class="about__left">
                 </div>
-                <!-- education -->
-                <div class="about__education paralax-elem">
-                    <h3 class="title--small">01.1.education</h3>
-                    <p>Zaporizhzhia National University.Tourism</p>
-                    <p>Dan IT education.Front-End</p>
-                </div>
-                <!-- skills -->
-                <div class="about__skills paralax-elem">
-                    <h3 class="title--small">01.2.my Skills</h3>
-                    <div class="about__dropdown-list">
-                        <!-- html -->
-                        <div class="dropdown">
+                <div class="about__right">
+                    <div class="tabs">
+                        <button class="tab-btn active" data-id="about-me">About</button>
+                        <button class="tab-btn" data-id="skills">Skills</button>
+                        <button class="tab-btn" data-id="education">Education</button>
+                        <button class="tab-btn" data-id="languages">Languages</button>
+                    </div>
+                    <div class="tab-content active" id="about-me">
+                        <h3 class="about__title">About me</h3>
+                        <p>
+                            I am a highly motivated and dedicated Junior Front EndDeveloper with a passion for
+                            creating innovative and user-friendly web applications. With a strong foundation in HTML, CSS, and
+                            JavaScript, I have recently honed my skills in React and Redux
+                        </p>
+                        <p>
+                            I am eager to contribute my expertise and enthusiasm
+                            to an organization that values innovation, teamwork, and growth.
+                        </p>
+                        <a href="utils/Front End Diana Chassot.pdf" class="btn link" target="_blank" download>CV download</a>
+                    </div>
+                    <div class="tab-content" id="skills">
+                        <h3 class="about__title">Skills</h3>
+                        <div class="skills">
                             <div>
                                 <i class="fa-brands fa-html5"></i>
                                 <span>HTML</span>
-                                <i class="fa-solid fa-angles-down fa-beat"></i>
+                               
                             </div>
-                            <div class="dropdown-content">
-                                <p>
-                                    Quite a good knowledge
-                                </p>
-                            </div>
-                        </div>
-                        <!-- CSS -->
-                        <div class="dropdown">
                             <div>
                                 <i class="fa-brands fa-css3-alt"></i>
                                 <span>CSS</span>
-                                <i class="fa-solid fa-angles-down fa-beat"></i>
+                                
                             </div>
-                            <div class="dropdown-content">
-                                <p>
-                                    Quite a good knowledge
-                                </p>
-                            </div>
-                        </div>
-                        <!-- js -->
-                        <div class="dropdown">
                             <div>
                                 <i class="fa-brands fa-js"></i>
                                 <span>JavaScript</span>
-                                <i class="fa-solid fa-angles-down fa-beat"></i>
+                              
                             </div>
-                            <div class="dropdown-content">
-                                <p>
-                                    Average level of knowledge in JavaScript<br>
-                                    I have basic understanding of the language and I am able to write simple scripts and
-                                    perform basic DOM manipulation;
-                                    Familiar with basic programming concepts,and more advanced such as promises,ajax or
-                                    object-oriented programming;
-                                </p>
-                            </div>
-                        </div>
-                        <!-- node -->
-                        <div class="dropdown">
                             <div>
                                 <i class="fa-brands fa-node"></i>
                                 <span>Node JS</span>
-                                <i class="fa-solid fa-angles-down fa-beat"></i>
+                            
                             </div>
-                            <div class="dropdown-content">
-                                <p>
-                                    Entry level <br>
-                                    I am familiar with the Node Package Manager (npm), and how to use it to
-                                    install and manage third-party packages and dependencies;
-                                </p>
+                            <div>
+                                <i class="fa-brands fa-react"></i>
+                                <span>React</span>
+                        
                             </div>
-                        </div>
-                        <!-- git -->
-                        <div class="dropdown">
+                            <div>
+                                <svg width="55px" height="55px" viewBox="0 -6 256 256"
+                                    xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid">
+                                    <path
+                                        d="M177.381 169.733c9.447-.978 16.614-9.122 16.288-18.896-.325-9.773-8.47-17.592-18.243-17.592h-.651c-10.1.326-17.918 8.796-17.592 18.895.326 4.887 2.28 9.122 5.212 12.054-11.076 21.828-28.016 37.791-53.426 51.148-17.266 9.122-35.183 12.38-53.1 10.1-14.66-1.955-26.062-8.47-33.23-19.222-10.424-15.963-11.401-33.23-2.605-50.496 6.19-12.38 15.962-21.502 22.152-26.063-1.303-4.235-3.258-11.402-4.235-16.614-47.237 34.207-42.35 80.468-28.016 102.295 10.75 16.29 32.577 26.389 56.684 26.389 6.515 0 13.03-.652 19.546-2.28 41.699-8.145 73.299-32.905 91.216-69.718zm57.336-40.397c-24.759-28.995-61.245-44.958-102.944-44.958h-5.212c-2.932-5.864-9.122-9.774-15.963-9.774h-.652C99.848 74.93 92.03 83.4 92.355 93.5c.326 9.773 8.47 17.592 18.243 17.592h.651c7.167-.326 13.357-4.887 15.963-11.077h5.864c24.759 0 48.214 7.167 69.39 21.176 16.288 10.751 28.016 24.76 34.531 41.7 5.538 13.683 5.212 27.04-.652 38.443-9.121 17.266-24.432 26.714-44.63 26.714-13.031 0-25.41-3.91-31.926-6.842-3.583 3.258-10.099 8.47-14.66 11.729 14.009 6.515 28.343 10.099 42.025 10.099 31.274 0 54.404-17.267 63.2-34.533 9.447-18.896 8.795-51.474-15.637-79.165zM69.225 175.27c.326 9.774 8.47 17.592 18.243 17.592h.652c10.099-.325 17.917-8.796 17.591-18.895-.325-9.774-8.47-17.592-18.243-17.592h-.651c-.652 0-1.63 0-2.28.325-13.357-22.153-18.895-46.26-16.94-72.323 1.302-19.547 7.818-36.488 19.22-50.497 9.447-12.054 27.69-17.918 40.07-18.243 34.531-.652 49.19 42.351 50.168 59.618 4.235.977 11.402 3.258 16.289 4.887C189.434 27.366 156.857 0 125.584 0c-29.32 0-56.359 21.176-67.11 52.451-14.985 41.7-5.212 81.771 13.031 113.372-1.628 2.28-2.606 5.864-2.28 9.448z"
+                                        fill="#764ABC" />
+                                </svg>
+                                <span>Redux</span>
+                            </div>
                             <div>
                                 <i class="fa-brands fa-github"></i>
-                                <span>Git</span>
-                                <i class="fa-solid fa-angles-down fa-beat"></i>
+                                <span>Git </span>
+                              
                             </div>
-                            <div class="dropdown-content">
-                                <p>I have experience using Git.<br>
-                                    Familiar with
-                                    basic Git commands such as
-                                    cloning
-                                    repositories, creating branches, committing changes, and pushing changes to remote
-                                    repositories,
-                                    publish pages at the "GitHub page".
-                                    I am familar using Git to resolve merge conflicts and manage multiple branches;
-                                </p>
-                            </div>
-                        </div>
-                        <!-- scss -->
-                        <div class="dropdown">
                             <div>
                                 <i class="fa-brands fa-sass"></i>
                                 <span>Sass(scss)</span>
-                                <i class="fa-solid fa-angles-down fa-beat"></i>
                             </div>
-                            <div class="dropdown-content">
-                                <p>Quite a good knowledge;</p>
+                            <div>
+                                <i class="fa-brands fa-bootstrap"></i>
+                                <span>Bootstrap</span>
+                              
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="about__lang paralax-elem">
-                    <h3 class="title--small">01.3.languages</h3>
-                    <ul>
-                        <li>Ukrainian - native;</li>
-                        <li>Russian - native;</li>
-                        <li>English - B2 Upper Intermediate</li>
-                        <li>French - A2</li>
-                    </ul>
-                </div>
+                    <div class="tab-content" id="education">
+                        <h3 class="about__title">Education</h3>
 
-                <div class="about__btns paralax-elem">
-                    <a href="#" class="link link--neon" target="_blank">SV download</a>
-                    <a href="https://www.efset.org/cert/fYTRr1" class="link link--neon" target="_blank">
-                        Link to my <b>"EF SET"</b> English sertificate&#62;&#62;
-                    </a>
+                        <ul>
+                            <li>Dan IT Education - Front-End</li>
+                            <li>Zaporizhzhia National University - Tourism</li>
+                        </ul>
+                        <a href="#" class="btn link" target="_blank">Dan IT serificate</a>
+                    </div>
+                    <div class="tab-content" id="languages">
+
+                        <h3 class="about__title">Languages</h3>
+                        <ul>
+                            <li>English B2</li>
+                            <li>French A1</li>
+                            <li>Ukrainian native</li>
+                            <li>Russian native</li>
+                        </ul>
+                        <a href="https://www.efset.org/cert/fYTRr1" class="btn link" target="_blank">
+                            EF SET English sertificate
+                        </a>
+
+                    </div>
+
+
                 </div>
             </div>
         </div>
     </section>
     <!-- projects -->
     <section class="projects" id="projects">
-        <div class="parallax">
-            <div class="container">
-                <h2 class="projects__title title--small paralax-elem">03.my projects</h2>
-                <div class="project__cards-flex">
-                    <div class="project__card paralax-elem">
-                        <div class="project__descr">
-                            <h3 class="project__card-title">Gallery</h3>
-                            <p class="project__card-descr">Gallery with small functionality.
-                                Making a request to the Unsplash API and retrieving image data.
-                                Filtering images by a keyword.
-                                Displaying 30 images per request.
-                                Limiting the number of available requests to 50/h.
-                            </p>
-                            <div class="project__links">
-                                <a class="project__link" href="https://github.com/Diana-Chassot/Gallery" target="_blank">
-                                    <i class="fa-brands fa-github"></i>
-                                </a>
-                                <a class="project__link" href="https://dchassot.ch/Galery" target="_blank">
-                                    <i class="fa-solid fa-square-up-right"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="project__img">
-                            <a href="https://dchassot.ch/Galery" target="_blank">
-                                <img src="img/screencaptureGalery.png" alt="Gallery">
+        <div class="container">
+            <h2 class="title">My projects</h2>
+            <div class="project__tabs tabs">
+                <button class="tab-btn active" data-id="pizza">Pizza</button>
+                <button class="tab-btn" data-id="coctails">Coctails</button>
+                <button class="tab-btn" data-id="flowers">Flowers</button>
+                <button class="tab-btn" data-id="gallery">Gallery</button>
+                <button class="tab-btn" data-id="california">California</button>
+                <button class="tab-btn" data-id="myWeb">My Web</button>
+            </div>
+            <div class="project__cards-flex">
+                <div class="project__card project__card-content active" id="pizza">
+                    <div class="project__descr">
+                        <h3 class="project__card-title">Pizza</h3>
+                        <p class="project__card-descr">
+                            Pizza Store;
+                            Responsive website using React.js;
+                            Training my skills in React and Redux;
+                            Design;
+                        </p>
+                        <hr/>
+                        <p class="project__card-descr">
+                            Technologies used in the project:
+                            HTML;
+                            SCSS;
+                            CSS;
+                            JavaScript;
+                            React;
+                            Redux;
+                            Formik;
+                            Yup;
+                        </p>
+                        <div class="project__links">
+                            <a class="project__link" href="https://github.com/Diana-Chassot/Gallery" target="_blank">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a class="project__link" href="https://dchassot.ch/Galery" target="_blank">
+                                <i class="fa-solid fa-square-up-right"></i>
                             </a>
                         </div>
                     </div>
+                    <div class="project__img">
+                        <a href="https://dchassot.ch/Galery" target="_blank">
+                            <img src="img/screencapturePizza.png" alt="Gallery">
+                        </a>
+                    </div>
+                </div>
+                <div class="project__card project__card-content" id="coctails">
+                    <div class="project__descr">
+                        <h3 class="project__card-title">Coctails</h3>
+                        <p class="project__card-descr">
+                            Coctails app;
+                            Fetch data from free Api server "https://www.thecocktaildb.com";
+                            Filter drinks by name, ingridient;
+                            Responsive Design using Bootstrap;
+                        </p>
+                        <hr/>
+                        <p class="project__card-descr">
+                            Technologies used in the project:
+                            HTML;
+                            CSS;
+                            JavaScript;
+                            Bootstrap;
+                        </p>
+                        <div class="project__links">
+                            <a class="project__link" href="https://github.com/Diana-Chassot/Coctails" target="_blank">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a class="project__link" href="https://dchassot.ch/Coctails" target="_blank">
+                                <i class="fa-solid fa-square-up-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project__img">
+                        <a href="https://dchassot.ch/Galery" target="_blank">
+                            <img src="img/screencaptureCoctails.png" alt="Gallery">
+                        </a>
+                    </div>
+                </div>
+                <div class="project__card project__card-content" id="flowers">
+                    <div class="project__descr">
+                        <h3 class="project__card-title">Flowers</h3>
+                        <p class="project__card-descr">
+                            Flowers store;
+                            My first Homework with React at "Dan It education"
+                            Responsive website using React.js;
+                            Design;
+                        </p>
+                        <hr/>
+                        <p class="project__card-descr">
+                            Technologies used in the project:
+                            HTML;
+                            SCSS;
+                            CSS;
+                            JavaScript;
+                            React;
+                            Redux;
+                            Formik;
+                            Yup;
+                        </p>
+                        <div class="project__links">
+                            <a class="project__link" href="https://github.com/Diana-Chassot/Gallery" target="_blank">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a class="project__link" href="https://dchassot.ch/Galery" target="_blank">
+                                <i class="fa-solid fa-square-up-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project__img">
+                        <a href="https://dchassot.ch/Galery" target="_blank">
+                            <img src="img/screencaptureFlowerShop.png" alt="Gallery">
+                        </a>
+                    </div>
+                </div>
+                <div class="project__card project__card-content" id="gallery">
+                    <div class="project__descr">
+                        <h3 class="project__card-title">Gallery</h3>
+                        <p class="project__card-descr">
+                            Practice with Rest API.
+                            Making a request to the Unsplash API and retrieving image data.
+                            Filtering images by a keyword.
+                            Displaying 30 images per request.
+                            Limiting the number of available requests to 50/h.
+                        </p>
+                        <hr/>
+                        <p class="project__card-descr">
+                            Technologies used in the project:
+                            HTML;
+                            CSS;
+                            JavaScript;
+                        </p>
+                        <div class="project__links">
+                            <a class="project__link" href="https://github.com/Diana-Chassot/Gallery" target="_blank">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a class="project__link" href="https://dchassot.ch/Galery" target="_blank">
+                                <i class="fa-solid fa-square-up-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project__img">
+                        <a href="https://dchassot.ch/Galery" target="_blank">
+                            <img src="img/screencaptureGalery.png" alt="Gallery">
+                        </a>
+                    </div>
+                </div>
 
-                    <div class="project__card paralax-elem">
-                        <div class="project__descr">
-                            <h3 class="project__card-title">California</h3>
-                            <p class="project__card-descr">
-                                Landing page "California"
-                                Technologies used in the project:
-                                HTML;
-                                SCSS;
-                                CSS;
-                                JavaScript;
-                                Gulp;
-                                Git;
-                                Adaptive Web Design;</br>
-                                <span class="important">!important</span>
-                                command -- npm run dev -- collecting project in the dist folder, tracking changes in the
-                                files, live server;
-                            </p>
-                            <div class="project__links">
-                                <a class="project__link" href="https://github.com/Diana-Chassot/California" target="_blank">
-                                    <i class="fa-brands fa-github"></i>
-                                </a>
-                                <a class="project__link" href="https://diana-chassot.github.io/California/"  target="_blank">
-                                    <i class="fa-solid fa-square-up-right"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="project__img">
-                            <a href="https://diana-chassot.github.io/California/" target="_blank">
-                                <img src="img/screencaptureCalifornia.png" alt="California">
+                <div class="project__card project__card-content" id="california">
+                    <div class="project__descr">
+                        <h3 class="project__card-title">California</h3>
+                        <p class="project__card-descr">
+                            Landing page "California".
+                            One of my first projects to practice.
+                            Responsive layout.
+                        </p>
+                        <hr/>
+                        <p class="project__card-descr">
+                            Technologies used in the project:
+                            HTML;
+                            SCSS;
+                            CSS;
+                            JavaScript;
+                            Gulp;
+                            Git;
+                        </p>
+                        <div class="project__links">
+                            <a class="project__link" href="https://github.com/Diana-Chassot/California" target="_blank">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a class="project__link" href="https://diana-chassot.github.io/California/" target="_blank">
+                                <i class="fa-solid fa-square-up-right"></i>
                             </a>
                         </div>
                     </div>
+                    <div class="project__img">
+                        <a href="https://diana-chassot.github.io/California/" target="_blank">
+                            <img src="img/screencaptureCalifornia.png" alt="California">
+                        </a>
+                    </div>
+                </div>
+                <div class="project__card project__card-content" id="myWeb">
+                    <div class="project__descr">
+                        <h3 class="project__card-title">My web</h3>
+                        <p class="project__card-descr">
+                            Landing page.
+                            Responsive design;
+                        </p>
+                        <hr/>
+                        <p class="project__card-descr">
+                            Technologies used in the project:
+                            HTML;
+                            CSS;
+                            JavaScript;
+                            Formspree
+                        </p>
+                        <div class="project__links">
+                            <a class="project__link" href="https://github.com/Diana-Chassot/California" target="_blank">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project__img">
+                        <a href="https://dchassot.ch/">
+                            <img src="img/screencaptureMyWeb.png" alt="California">
+                        </a>
+                    </div>
                 </div>
             </div>
+            
         </div>
     </section>
-    <!-- contact -->
     <section class="contact" id="contact">
-        <div class="parallax">
-            <div class="container">
-                <h2 class="title--small paralax-elem">03.contact</h2>
-                <div class="contact__info paralax-elem">
-                    <p> Feel free to contact me</p>
-                    <p class="contact__details">
-                        <a href= "mailto:diana.chassot25@gmail.com">
-                            [diana.chassot25@gmail.com]
-                        </a>
-                    </p>
-                    <p class="contact__details">
-                        <a href="tel:+4733378901">
-                            [+41788289669]
-                        </a>
-                    </p>
-                    <a href="mailto:diana.chassot25@gmail.com" class="contact__link link--neon">
-                        Get in touch &#60;email&#62;
-                    </a>
-                </div>
+        <div class="container">
+            <h2 class="title">Contact</h2>
+            <div class="contact__info">
+                <form action="https://formspree.io/f/mvojpopq" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" placeholder="Enter your name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" placeholder="Enter your email" required>
+                    <label for="message">Message:</label>
+                    <textarea placeholder="Enter your message" for="message" name="message" required></textarea>
+                    <input type="submit" value="Submit" class="btn submit">
+                </form>
+                <div class="contact-me">Contact <br> me</div>
             </div>
         </div>
     </section>
+
     <footer class="footer">
         <div class="container">
-            <div class="footer__content">
-                <span>you can find me on social media :</span>
+            <div class="links">
+                <a href="https://www.facebook.com/diana.deineka" class="social-icon" target="_blank">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="https://github.com/Diana-Chassot" class="social-icon" target="_blank">
+
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/diana-chassot-3038a7263/" class="social-icon" target="_blank">
+                    <i class=" fa-brands fa-linkedin-in" target="_blank"></i>
+                </a>
+            </div>
+            <hr/>
+            <div class=" footer__info">
                 <div>
-                    <a href="https://www.facebook.com/diana.deineka" class="social-icon" target="_blank">
-                        <i class="fa-brands fa-facebook-f"></i>
-                    </a>
-                    <a href="https://twitter.com/dianaukaraine" class="social-icon" target="_blank">
-                        <i class="fa-brands fa-twitter"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/diana-chassot-3038a7263/" class="social-icon" target="_blank">
-                        <i class=" fa-brands fa-linkedin-in" target="_blank"></i>
+                    <p>Diana Chassot</p>
+
+                </div>
+                
+                <div>
+                    <a href="tel:+41788289669">
+                        Tel: +41788289669
                     </a>
                 </div>
-                <p class="footer__mobile">
-                    <a href="https://github.com/Diana-Chassot/my-web" target="_blank">
-                        Designed & built by<br>Diana Chassot
-                    </a>
-                </p>
             </div>
-        </div>    
+        </div>
     </footer>
 
     <!-- font-awesome -->
