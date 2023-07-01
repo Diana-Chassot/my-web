@@ -115,11 +115,6 @@
 
                             </div>
                             <div>
-                                <i class="fa-brands fa-node"></i>
-                                <span>Node JS</span>
-
-                            </div>
-                            <div>
                                 <i class="fa-brands fa-react"></i>
                                 <span>React</span>
 
@@ -300,10 +295,10 @@
                     <div class="project__descr">
                         <h3 class="project__card-title">Gallery</h3>
                         <p class="project__card-descr">
-                            This project is a web application that demonstrates the usage of 
-                            a REST API to retrieve image data from the Unsplash API. 
-                            It allows users to make requests to the Unsplash API, 
-                            filter images by a keyword, and display the results. 
+                            This project is a web application that demonstrates the usage of
+                            a REST API to retrieve image data from the Unsplash API.
+                            It allows users to make requests to the Unsplash API,
+                            filter images by a keyword, and display the results.
                             Displaying 30 images per request.
                             Limiting the number of available requests to 50/h.
                         </p>
@@ -385,7 +380,7 @@
                         </div>
                     </div>
                     <div class="project__img">
-                            <img src="img/screencaptureMyWeb.png" alt="My web">
+                        <img src="img/screencaptureMyWeb.png" alt="My web">
                     </div>
                 </div>
             </div>
@@ -397,13 +392,21 @@
             <h2 class="title">Contact</h2>
             <div class="contact__info">
                 <form action="https://formspree.io/f/mvojpopq" method="post">
-                    <label for="name">Name:</label>
-                    <input type="text" name="name" placeholder="Enter your name" required>
-                    <label for="email">Email:</label>
-                    <input type="email" name="email" placeholder="Enter your email" required>
-                    <label for="message">Message:</label>
-                    <textarea placeholder="Enter your message" for="message" name="message" required></textarea>
-                    <input type="submit" value="Submit" class="btn submit">
+                    <div class="form__group field">
+                        <input type="text" name="name" class="form__field"  required maxlength="40">
+                        <label for="name" class="form__label">Name</label>
+                    </div>
+                    <div class="form__group field">
+                        <input type="email" name="email" class="form__field"  required maxlength="60">
+                        <label for="email" class="form__label">Email</label>
+                    </div>
+                    <div class="form__group field">
+                        <label for="message" class="form__label">Message:</label>
+                        <textarea class="form__field" for="message" name="message" required>
+                        </textarea>
+                    </div>
+
+                    <button type="submit" class="submit"><b>Send</b></button>
                 </form>
                 <div class="contact-me">Contact <br> me</div>
             </div>

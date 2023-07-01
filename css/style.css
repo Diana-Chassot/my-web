@@ -46,34 +46,95 @@ form {
   gap: 30px;
   color: var(--color-main);
 }
-input,
-textarea {
-  width: 100%;
-  padding: 10px 5px;
-  border-bottom: 1px solid var(--color-main);
-  font-size: 14px;
-}
+
 textarea {
   resize: none;
   height: 100px;
-  padding: 0 5px;
+
 }
-input:focus,
-textarea:focus {
+.form__group {
+  position: relative;
+  padding: 20px 0 0;
+  width: 100%;
+}
+
+.form__field {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #9b9b9b;
+  outline: 0;
+  font-size: 17px;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s; 
+  letter-spacing: 1px;
+}
+
+.form__field:placeholder-shown ~ .form__label {
+  font-size: 17px;
+  top: 20px;
+}
+.form__label {
+  position: absolute;
+  font-weight: bold;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 17px;
+  color: #9b9b9b;
+}
+
+.form__field:focus {
+  padding-bottom: 6px;
+  border-width: 3px;
   border-bottom: 2px solid var(--color-accent);
 }
-label {
-  font-weight: bold;
+
+.form__field:focus ~ .form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 16px;
+  color: var(--color-accent);
+  font-weight: 700;
 }
-input[type="submit"] {
-  cursor: pointer;
-  border: none;
-  padding: 12px;
-  transition: background-color 0.3s ease;
+
+.form__field:required, .form__field:invalid {
+  box-shadow: none;
 }
-input[type="submit"]:hover {
-  background-color: var(--color-accent);
+.submit {
+  position: relative;
+  padding: 0.7em 1.4em;
+  background-color: #00c6ff;
+  border-radius: 0.5em;
+  color: #DEDEDE;
+  box-shadow: 0.5em 0.5em 0.5em rgba(0, 0, 0, 0.3);
 }
+
+.submit::before {
+  position: absolute;
+  content: '';
+  height: 0;
+  width: 0;
+  top: 0;
+  left: 0;
+  background: linear-gradient(135deg, white 0%, white 50%, #00c6ff 50%, #00c6ff 60%);
+  border-radius: 0 0 0.5em 0;
+  box-shadow: 0.2em 0.2em 0.2em rgba(0, 0, 0, 0.3);
+  transition: 0.3s;
+}
+
+.submit:hover::before {
+  width: 1.6em;
+  height: 1.6em;
+}
+
+.submit:active {
+  box-shadow: 0.2em 0.2em 0.3em rgba(0, 0, 0, 0.3);
+  transform: translate(0.1em, 0.1em);
+}
+
 
 .skills .fa-brands {
   font-size: 65px;
@@ -107,6 +168,7 @@ input[type="submit"]:hover {
   overflow-x: scroll;
   background-color: white;
   width: 100%;
+  min-height: 50px;
 }
 
 .tabs::-webkit-scrollbar {
@@ -334,6 +396,7 @@ color: var(--color-main);
   align-items: center;
   box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.319);
   display: flex;
+  min-height: 400px;
 }
 .project__tabs {
   display: none;
