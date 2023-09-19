@@ -35,9 +35,11 @@
                 </h2>
                 <i class="header__icon fa-brands fa-connectdevelop fa-spin"></i>
                 <nav class="header__list">
-                    <a href="./#about" class="header__item">About</a>
-                    <a href="./#projects" class="header__item">Projects</a>
-                    <a href="./#contact" class="header__item">Contact</a>
+                    <div class="header__items">
+                        <a href="./#about" >About</a>
+                        <a href="./#projects">Projects</a>
+                        <a href="./#contact">Contact</a>
+                    </div>
                     <div class="links">
                         <a href="https://www.facebook.com/diana.deineka" class="social-icon" target="_blank">
                             <i class="fa-brands fa-facebook-f"></i>
@@ -151,7 +153,7 @@
                             <li>Dan IT Education - Front-End</li>
                             <li>Zaporizhzhia National University - Tourism</li>
                         </ul>
-                        <a href="#" class="btn link" target="_blank">Dan IT serificate</a>
+                        <a href="#" class="btn link disabled">Dan-IT serificate (Coming soon)</a>
                     </div>
                     <div class="tab-content" id="languages">
 
@@ -319,7 +321,7 @@
                         </div>
                     </div>
                     <div class="project__img">
-                        <a href="https://dchassot.ch/Galery" target="_blank">
+                        <a href="https://dchassot.ch/Gallery" target="_blank">
                             <img src="img/screencaptureGalery.png" alt="Gallery">
                         </a>
                     </div>
@@ -360,7 +362,7 @@
                 </div>
                 <div class="project__card project__card-content" id="myWeb">
                     <div class="project__descr">
-                        <h3 class="project__card-title">My web</h3>
+                        <h3 class="project__card-title">My-web</h3>
                         <p class="project__card-descr">
                             Landing page with contact form using "Formspree" .Page provide information about me, my
                             skills and projects.
@@ -393,17 +395,19 @@
             <div class="contact__info">
                 <form action="https://formspree.io/f/mvojpopq" method="post">
                     <div class="form__group field">
-                        <input type="text" name="name" class="form__field"  required maxlength="40">
+                        <input type="text" name="name" id="name" class="form__field" required maxlength="40"
+                            autocomplete="name">
                         <label for="name" class="form__label">Name</label>
                     </div>
                     <div class="form__group field">
-                        <input type="email" name="email" class="form__field"  required maxlength="60">
+                        <input type="email" name="email" id="email" class="form__field" required maxlength="60"
+                            autocomplete="email">
                         <label for="email" class="form__label">Email</label>
                     </div>
                     <div class="form__group field">
                         <label for="message" class="form__label">Message:</label>
-                        <textarea class="form__field" for="message" name="message" required>
-                        </textarea>
+                        <textarea class="form__field" for="message" id="message" name="message" required
+                            autocomplete="message"></textarea>
                     </div>
 
                     <button type="submit" class="submit"><b>Send</b></button>

@@ -61,5 +61,3 @@ function handleTabs(e, contentSelector) {
 
 
 
-
-
