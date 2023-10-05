@@ -279,42 +279,40 @@ textarea {
   color: var(--color-main);
 }
 /* main */
-.main {
-  color: var(--color-white);
-  display: flex;
-  align-items: center;
-}
+
 .main__wrapper {
   border: 2px solid var(--color-white);
+  width: 70%;
   height: 555px;
-  background-image: url("../img/code5.jfif");
+  background-image: url("../img/code3.jfif");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin: 0 auto;
   box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.319);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .main__content {
-  padding: 20px;
+  width: 60%;
+  padding: 40px;
   border: 3px solid var(--color-white);
+  color: var(--color-white);
   border-radius: 4px;
-  width: 50%;
   background-color: #0000007d;
   box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.319);
+  text-align: center;
 }
 .main__title {
-  font-size: 78px;
+  font-size: 56px;
   font-weight: 900;
-  color: var(--color-white);
   text-transform: uppercase;
   letter-spacing: 2px;
-  text-shadow: var(--color-main) -3px -4px 0px;
+  
 }
-
 .main__subtitle {
-  font-size: 56px;
+  font-size: 44px;
   font-weight: 800;
 }
 /* about */
@@ -639,11 +637,6 @@ textarea {
   background-color: var(--color-accent);
 }
 
-@media screen and (max-width: 1400px) {
-  .container {
-    width: 100%;
-  }
-}
 @media screen and (max-width: 999px) {
   .skills {
     flex-wrap: wrap;
@@ -662,8 +655,11 @@ textarea {
 }
 
 @media screen and (max-width: 900px) {
-  .main__title {
-    font-size: 48px;
+  .main__content {
+    width: 100%;
+  }
+  .main__wrapper {
+    width: 100%;
   }
   .main__subtitle {
     font-size: 28px;
@@ -699,18 +695,14 @@ textarea {
     background-size: cover;
     background-position: center;
   }
-  .main__content {
-    width: 90%;
-  }
-  .main__wrapper {
-    background-image: none;
-    background-color: rgb(18 19 21 / 44%);
-  }
   .main__wrapper {
     background-image: none;
     background-color: transparent;
     box-shadow: none;
     border: none;
+  }
+  .main__title{
+    font-size: 44px;
   }
   .about__flex {
     display: block;
